@@ -1,0 +1,10 @@
+#Let us check if we can scrape the data from the website
+
+##turn on robotstxt package
+
+paths_allowed(
+  paths = c("https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_pg_2?_encoding=UTF8&pg=2")
+)
+
+##turn on rvest package
+sc<-read_html("https://www.amazon.com/Best-Sellers-Beauty-Skin-Care-Products/zgbs/beauty/11060451/ref=zg_bs_pg_2?_encoding=UTF8&pg=2")
